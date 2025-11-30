@@ -1,0 +1,418 @@
+/* input[type="text"], input[type="password"]{
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #4CAF50;   
+    color: blue;                 
+    width: 250px;
+}
+
+
+button {
+    background-color: #4CAF50;  
+    color: white;               
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+
+
+
+ */
+ *{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+body {
+    background: #fff8f0;
+    color: #333;
+}
+
+.marquee {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1100;   /* video se upar */
+}
+
+.navbar {
+    position: fixed;
+    top: 40px;      /* marquee ke neeche start */
+    width: 100%;
+    z-index: 1000;
+}
+
+.marquee{
+    font-family: sans-serif;
+    background-color: #c5203c;
+    color: white;
+    vertical-align: center;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cart {
+    font-size: 20px;
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    border: transparent;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    padding-top: 50px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease; 
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hover {
+    color: #d35400;
+}
+
+/* HERO SECTION */
+
+.hero {
+    height: 100vh;
+    background: url(Images\ /banner.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.cake-hero {
+    height: 100vh;
+    background: url(Images\ /cake-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.x-hero {
+    height: 100vh;
+    background: url(Images\ /x-salad.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.sandwich-hero {
+    height: 100vh;
+    background: url(Images\ /sandwich-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.z-hero {
+    height: 100vh;
+    background: url(Images\ /z-puff.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.bread-hero {
+    height: 100vh;
+    background: url(Images\ /bread-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.snack-hero {
+    height: 100vh;
+    background: url(Images\ /snakes-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.donut-hero {
+    height: 100vh;
+    background: url(Images\ /donut-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.Nimko-hero {
+    height: 100vh;
+    background: url(Images\ /nimko-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.pizza-hero {
+    height: 100vh;
+    background: url(Images\ /pizza-background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    vertical-align: bottom;
+}
+
+
+/*  Video  */
+.video-container {
+    z-index: 1;
+    position: relative;
+    max-width: 1200px;     
+    max-height: 600px;    
+    margin: 0 auto;    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: auto;
+    height: auto;
+    object-fit: cover; /* images jaisa look */
+}
+
+/* PRODUCTS */
+.products {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.add-to-cart {
+    background-color: rgb(232, 118, 118);
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 18px;
+}
+
+
+p {
+    padding-bottom: 8px;
+}
+
+/*about page*/
+.about-pagetitle {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    padding-top: 100px;
+}
+
+.about-pageheading {
+    text-align: center;
+    font-size: 28px;
+    margin: 25px 0 10px;
+}
+
+.about-pagetext {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+
+/* ABOUT */
+.baguet {
+    font-family: 'times new roman', cursive;
+    font-size: 40px;
+    line-height: 1.8;
+    color: #333;
+}
+.about-container {
+    padding-left: 100px;
+    max-width:  1200px;
+    max-height: 600px;
+    overflow: hidden; /* Clear floats */
+}
+
+.about-text {
+    float: left;
+    width: 45%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    font-size: 25;
+}
+
+.about-image {
+    float: right;
+    width: 45%;
+    height: 30%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    bottom: 20;
+}
+/*  Video  */
+.video-container {
+    z-index: 1;
+    position: relative;
+    max-width: 1200px;     
+    max-height: 500px;    
+    margin: 0 auto;    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: auto;
+    height: auto;
+    object-fit: cover; /* images jaisa look */
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* new contact page*/
+       /* NAVBAR */
+   .map-container {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid #ddd; 
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    
+        .map-container h3 {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+/* FOOTER */
+
+.icon {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: inherit;
+    color: black;
+}
